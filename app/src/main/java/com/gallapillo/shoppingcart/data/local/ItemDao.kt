@@ -1,8 +1,8 @@
-package com.gallapillo.shoppingcart.model.data.local
+package com.gallapillo.shoppingcart.data.local
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.gallapillo.shoppingcart.model.Item
+import com.gallapillo.shoppingcart.data.local.entity.Item
 
 @Dao
 interface ItemDao {
@@ -14,5 +14,5 @@ interface ItemDao {
     suspend fun delete(item: Item)
 
     @Query("SELECT * FROM items")
-    fun getAllItem() : LiveData<List<Item>>
+    fun getAllItems() : LiveData<List<Item>>
 }

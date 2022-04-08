@@ -1,10 +1,10 @@
-package com.gallapillo.shoppingcart.model.data.local
+package com.gallapillo.shoppingcart.data.local
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.gallapillo.shoppingcart.model.Item
+import com.gallapillo.shoppingcart.data.local.entity.Item
 
 @Database(
     entities = [Item::class],

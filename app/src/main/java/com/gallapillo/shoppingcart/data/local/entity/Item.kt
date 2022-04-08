@@ -1,4 +1,4 @@
-package com.gallapillo.shoppingcart.model
+package com.gallapillo.shoppingcart.data.local.entity
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
