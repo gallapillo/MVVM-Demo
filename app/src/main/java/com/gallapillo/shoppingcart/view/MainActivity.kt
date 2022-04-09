@@ -1,8 +1,9 @@
-package com.gallapillo.shoppingcart
+package com.gallapillo.shoppingcart.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProviders
+import com.gallapillo.shoppingcart.R
 import com.gallapillo.shoppingcart.data.local.ItemDatabase
 import com.gallapillo.shoppingcart.repository.ItemRepository
 import com.gallapillo.shoppingcart.viewmodel.ItemViewModel

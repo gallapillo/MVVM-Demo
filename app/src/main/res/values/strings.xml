@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Shopping Cart</string>
+    <string name="amount">Amount</string>
+    <string name="name">Name</string>
+    <string name="delete">Delete</string>
+    <string name="added">Added</string>
+    <string name="minus">Minus</string>
 </resources>
