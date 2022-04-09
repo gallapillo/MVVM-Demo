@@ -5,4 +5,5 @@
     <string name="delete">Delete</string>
     <string name="added">Added</string>
     <string name="minus">Minus</string>
+    <string name="add_a_new_item">Add a new Item</string>
 </resources>
