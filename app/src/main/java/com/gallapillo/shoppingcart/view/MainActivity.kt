@@ -15,17 +15,20 @@ import com.gallapillo.shoppingcart.view.dialog.AddItemDialog
 import com.gallapillo.shoppingcart.viewmodel.ItemViewModel
 import com.gallapillo.shoppingcart.viewmodel.ItemViewModelFactory
 import kotlinx.android.synthetic.main.activity_main.*
+import org.kodein.di.KodeinAware
+import org.kodein.di.android.kodein
+import org.kodein.di.generic.instance
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), KodeinAware {
+
+    override val kodein by kodein()
+    private val factory: ItemViewModelFactory by instance()
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        val database = ItemDatabase(this)
-        val repository = ItemRepository(database)
-        val factory = ItemViewModelFactory(repository)
 
         val viewModel = ViewModelProviders.of(this, factory).get(ItemViewModel::class.java)
 
